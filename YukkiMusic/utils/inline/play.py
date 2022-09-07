@@ -10,6 +10,8 @@
 import random
 
 from pyrogram.types import InlineKeyboardButton
+from config import CHANNEL_SUDO
+from YukkiMusic import app
 
 selections = [
     "▁▄▂▇▄▅▄▅▃",
@@ -57,8 +59,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=_["SOURCE_DRAGON"],
-                url=f"https://t.me/yy8gg",
+                text=_["SOURCE_DRAGON"], url=f"{CHANNEL_SUDO}",
             ),
         ],
     ]
