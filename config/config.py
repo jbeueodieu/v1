@@ -64,12 +64,12 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
-SUDO = getenv(
-    "SUDO", ""
-)
+CHANNEL = getenv(
+    "CHANNEL", ""
+)  # معرف قناتك بدون @
 CHANNEL_SUDO = getenv(
     "CHANNEL_SUDO", ""
-)
+)  # رابط قناتك
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", ""
 )  # Example:- https://t.me/yy8gg
