@@ -64,6 +64,9 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
+CHANNEL_SUDO = getenv(
+    "CHANNEL_SUDO", ""
+)
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", ""
 )  # Example:- https://t.me/yy8gg
