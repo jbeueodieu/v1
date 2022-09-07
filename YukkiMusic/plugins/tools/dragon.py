@@ -69,7 +69,7 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "𝑺𝒐𝒖𝒓𝒄𝒆", url=f"https://t.me/yy8gg"),
+                        "• Source •", url=f"{CHANNEL_SUDO}"),
                 ],
             ]
         ),
@@ -99,7 +99,7 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "𝑺𝒐𝒖𝒓𝒄𝒆", url=f"https://t.me/yy8gg"),
+                        "• Source •", url=f"{CHANNEL_SUDO}"),
                 ],
             ]
         ),
@@ -113,37 +113,15 @@ async def khalid(client: Client, message: Message):
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/af9cd8ee877f49866a66d.jpg",
-        caption=f"""𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒕𝒉𝒆 𝑫𝒓𝒂𝒈𝒐𝒏 𝑺𝒐𝒖𝒓𝒄𝒆""",
+        caption=f"""- أهلا بك في سورس ميوزك يافا 🫂♥️""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                InlineKeyboardButton("𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓", url=f"https://t.me/ku_kx"),
+                InlineKeyboardButton("• Dev •", url=f"{SUDO}"),
                 ],[
                 InlineKeyboardButton(
-                        "𝑺𝒐𝒖𝒓𝒄𝒆", url=f"https://t.me/yy8gg"),
+                        "• Source •", url=f"{CHANNEL_SUDO}"),
                 ]
             ]
         ),
     )
-
-@app.on_message(
-    command(["سورس","السورس"])
-    & filters.group
-    & ~filters.edited
-)
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/af9cd8ee877f49866a66d.jpg",
-        caption=f"""[𝑫𝒓𝒂𝒈𝒐𝒏 𝑺𝒐𝒖𝒓𝒄𝒆 𝒇𝒐𝒓 𝑺𝒆𝒓𝒗𝒊𝒄𝒆 𝑩𝒐𝒕𝒔](https://t.me/yy8gg)""",
-        reply_markup=InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(
-                        "𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓", url=f"https://t.me/ku_kx"),
-            ],[
-                InlineKeyboardButton("أضفني الى مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-            ]
-        ]
-         ),
-     )
-  
