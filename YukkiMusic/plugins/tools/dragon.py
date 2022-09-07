@@ -16,7 +16,7 @@ from YukkiMusic.utils.decorators.language import language
 import random
 import config
 import re
-from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
+from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP, CHANNEL_SUDO, SUDO
 import string
 import lyricsgenius as lg
 from pyrogram.types import (InlineKeyboardButton,
